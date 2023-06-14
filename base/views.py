@@ -5,7 +5,8 @@ def home(request):
 
 def count(request):
 
-    para=request.POST.get('para')
+    para=request.POST.get('quantity')
     l=para.split(' ')
-    return render(request,'index1.html',{'count':len(l)})
+    print(len(l))
+    return render(request,'index1.html',{'count':str(len(l))})
     

@@ -2,11 +2,12 @@
     <head><title>No. Of Words</title></head>
     <body>
         <h1>Enter Paragraph</h1>
-        <form method="POST" action="{% url 'count' %}">
-            {% csrf token %}
-            <textarea placeholder="Enter paragraph" name="para"></textarea>
+
+        <form method="post" action="{% url 'count' %}">
+            {% csrf_token %}
+            <textarea placeholder="Enter paragraph" name="quantity"></textarea>
             <br><br><br>
-            <input type="submit">SUBMIT</button>
+            <input type="submit"></button>
 
         </form>
         
