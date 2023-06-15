@@ -1,6 +1,10 @@
 <html>
     <head><title>count</title></head>
     <body>
+        {% if count > '6' %}
         <h1>{{count}}</h1>
+        {% else %}
+        <h1>low score</h1>
+        {% endif %}
     </body>
 </html>
